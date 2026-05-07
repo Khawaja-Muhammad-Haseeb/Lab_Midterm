@@ -17,5 +17,5 @@ RUN pip install --no-cache-dir \
 EXPOSE 8000
 
 # Start FastAPI app
-# model.pkl and metrics.json are copied in by Jenkins before build
+# model.pkl and metrics.json are copied by Jenkins before build
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
