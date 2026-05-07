@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir \
     scikit-learn \
     joblib \
     numpy
-
+RUN python3 train.py   
 # Expose port 8000
 EXPOSE 8000
 
