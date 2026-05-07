@@ -11,7 +11,8 @@ RUN pip install --no-cache-dir \
     uvicorn \
     scikit-learn \
     joblib \
-    numpy
+    numpy \
+    pandas
 RUN python3 train.py   
 # Expose port 8000
 EXPOSE 8000
