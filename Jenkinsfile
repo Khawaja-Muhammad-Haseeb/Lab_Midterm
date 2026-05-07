@@ -38,17 +38,17 @@ pipeline {
         // ================================================
         // STAGE 3: TRAIN THE MODEL (Step 4)
         // ================================================
-        stage('Train Model') {
-            steps {
-                echo 'Installing dependencies and training model...'
-                sh '''
-                    pip install scikit-learn pandas numpy joblib --break-system-packages --quiet
-                    python3 train.py
-                    echo "Training complete"
-                    cat metrics.json
-                '''
-            }
-        }
+        // stage('Train Model') {
+        //     steps {
+        //         echo 'Installing dependencies and training model...'
+        //         sh '''
+        //             pip install scikit-learn pandas numpy joblib --break-system-packages --quiet
+        //             python3 train.py
+        //             echo "Training complete"
+        //             cat metrics.json
+        //         '''
+        //     }
+        // }
 
         // ================================================
         // STAGE 4: BUILD DOCKER IMAGE (Step 5)
